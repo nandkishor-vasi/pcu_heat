@@ -1,4 +1,4 @@
-# 🌡️ Urban Heat AI Mitigation System — MVP
+# Urban Heat AI Mitigation System — MVP
 
 > PCU Ideathon 3.0 | Team Gottem | Showcase Demo
 
@@ -6,7 +6,7 @@ A full-stack precision cooling intelligence platform. Identifies urban heat hots
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 urban-heat-mvp/
@@ -30,7 +30,7 @@ urban-heat-mvp/
 
 ---
 
-## 🚀 Setup & Run
+## Setup & Run
 
 ### 1. Backend (FastAPI)
 
@@ -57,7 +57,7 @@ Frontend will be live at: `http://localhost:5173`
 
 ---
 
-## 🔌 API Endpoints
+## API Endpoints
 
 | Method | Endpoint                    | Description                              |
 |--------|-----------------------------|------------------------------------------|
@@ -78,7 +78,7 @@ Frontend will be live at: `http://localhost:5173`
 
 ---
 
-## 🧠 Simulation Logic
+## Simulation Logic
 
 The system uses zone-aware multipliers to calculate realistic cooling impact:
 
@@ -92,19 +92,19 @@ The system uses zone-aware multipliers to calculate realistic cooling impact:
 
 ---
 
-## 🌍 Interventions Available
+## Interventions Available
 
 | Intervention         | Base Cooling | Cost/Unit     |
 |----------------------|-------------|---------------|
-| 🌳 Tree Plantation   | 0.08°C/tree | ₹5,000/tree   |
-| 🏠 Cool Roof Coating | 0.15°C/unit | ₹80,000/unit  |
-| 🌿 Green Corridor    | 0.25°C/seg  | ₹2,00,000/seg |
-| 💧 Smart Mist Station| 0.40°C/sta  | ₹1,50,000/sta |
-| 🛣️ Reflective Pavement| 0.12°C/sec | ₹1,20,000/sec |
+| Tree Plantation      | 0.08°C/tree | ₹5,000/tree   |
+| Cool Roof Coating    | 0.15°C/unit | ₹80,000/unit  |
+| Green Corridor       | 0.25°C/seg  | ₹2,00,000/seg |
+| Smart Mist Station   | 0.40°C/sta  | ₹1,50,000/sta |
+| Reflective Pavement  | 0.12°C/sec | ₹1,20,000/sec  |
 
 ---
 
-## 🔮 Next Steps (Post-MVP)
+## Next Steps (Post-MVP)
 
 - Replace mock grid with **real Landsat-9 / Sentinel-2** data via Google Earth Engine API
 - Train **Random Forest Regressor** on actual NDVI/NDBI/LST correlations

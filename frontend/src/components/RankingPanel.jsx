@@ -14,7 +14,7 @@ export default function RankingPanel({ rankings }) {
       <div className="rank-list">
         {list.map((item) => (
           <div key={item.intervention} className={`rank-row ${item.rank === 1 ? "top" : ""}`}>
-            <div className="rank-num">{item.rank === 1 ? "🥇" : `#${item.rank}`}</div>
+            <div className="rank-num">{item.rank === 1 ? "#1" : `#${item.rank}`}</div>
             <div className="rank-icon">{item.icon}</div>
             <div className="rank-info">
               <div className="rank-name">{item.name}</div>

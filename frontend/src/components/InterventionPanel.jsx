@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 const INTERVENTIONS = [
-  { key: "tree_plantation",     label: "Tree Plantation",        icon: "🌳", max: 50, step: 5,  unit: "trees" },
-  { key: "cool_roof",           label: "Cool Roof Coating",      icon: "🏠", max: 20, step: 1,  unit: "rooftop units" },
-  { key: "green_corridor",      label: "Green Corridor",         icon: "🌿", max: 5,  step: 1,  unit: "segments" },
-  { key: "mist_cooling",        label: "Smart Mist Station",     icon: "💧", max: 3,  step: 1,  unit: "stations" },
-  { key: "reflective_pavement", label: "Reflective Pavement",    icon: "🛣️", max: 10, step: 1,  unit: "sections" },
+  { key: "tree_plantation",     label: "Tree Plantation",        icon: "",   max: 50, step: 5,  unit: "trees" },
+  { key: "cool_roof",           label: "Cool Roof Coating",      icon: "",   max: 20, step: 1,  unit: "rooftop units" },
+  { key: "green_corridor",      label: "Green Corridor",         icon: "",   max: 5,  step: 1,  unit: "segments" },
+  { key: "mist_cooling",        label: "Smart Mist Station",     icon: "",   max: 3,  step: 1,  unit: "stations" },
+  { key: "reflective_pavement", label: "Reflective Pavement",    icon: "",   max: 10, step: 1,  unit: "sections" },
 ];
 
 export default function InterventionPanel({ onSimulate, result, loading }) {
@@ -57,7 +57,7 @@ export default function InterventionPanel({ onSimulate, result, loading }) {
         disabled={!selected || loading}
         onClick={() => onSimulate(selected, units)}
       >
-        {loading ? "⏳ Simulating..." : "▶ Run Simulation"}
+        {loading ? "Simulating..." : "Run Simulation"}
       </button>
 
       {result && <SimResult result={result} />}

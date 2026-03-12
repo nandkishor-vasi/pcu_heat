@@ -1,7 +1,7 @@
 export default function HotspotsList({ hotspots, onSelect, selectedCell }) {
   return (
     <div className="hotspots-list">
-      <div className="panel-label">🔥 TOP HOTSPOTS</div>
+      <div className="panel-label">TOP HOTSPOTS</div>
       {hotspots.map((cell, i) => (
         <div
           key={cell.id}

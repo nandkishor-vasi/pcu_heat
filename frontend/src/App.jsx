@@ -147,7 +147,7 @@ export default function App() {
           {error && <p className="panel-desc">{error}</p>}
           {!selectedCell ? (
             <div className="empty-state">
-              <div className="empty-icon">📡</div>
+              <div className="empty-icon"></div>
               <h2>Select a zone on the thermal map</h2>
               <p>Click any grid cell to analyze its heat signature and simulate cooling interventions.</p>
             </div>
@@ -172,13 +172,13 @@ export default function App() {
                   className={`tab ${activeTab === "simulate" ? "active" : ""}`}
                   onClick={() => setActiveTab("simulate")}
                 >
-                  ⚡ Simulate Intervention
+                  Simulate Intervention
                 </button>
                 <button
                   className={`tab ${activeTab === "rank" ? "active" : ""}`}
                   onClick={() => setActiveTab("rank")}
                 >
-                  🏆 Cooling ROI Ranking
+                  Cooling ROI Ranking
                 </button>
               </div>
 

@@ -88,7 +88,7 @@ for row in range(10):
 INTERVENTIONS = {
     "tree_plantation": {
         "name": "Tree Plantation",
-        "icon": "🌳",
+        "icon": "",
         "cost_per_unit": 5000,  # ₹ per tree
         "units_label": "trees",
         "base_cooling": 0.08,   # °C per tree
@@ -97,7 +97,7 @@ INTERVENTIONS = {
     },
     "cool_roof": {
         "name": "Cool Roof Coating",
-        "icon": "🏠",
+        "icon": "",
         "cost_per_unit": 80000,  # ₹ per 100m² roof
         "units_label": "rooftop units",
         "base_cooling": 0.15,
@@ -106,7 +106,7 @@ INTERVENTIONS = {
     },
     "green_corridor": {
         "name": "Green Corridor",
-        "icon": "🌿",
+        "icon": "",
         "cost_per_unit": 200000,  # ₹ per 100m stretch
         "units_label": "corridor segments",
         "base_cooling": 0.25,
@@ -115,7 +115,7 @@ INTERVENTIONS = {
     },
     "mist_cooling": {
         "name": "Smart Mist Station",
-        "icon": "💧",
+        "icon": "",
         "cost_per_unit": 150000,  # ₹ per station
         "units_label": "mist stations",
         "base_cooling": 0.4,
@@ -124,7 +124,7 @@ INTERVENTIONS = {
     },
     "reflective_pavement": {
         "name": "Reflective Pavement",
-        "icon": "🛣️",
+        "icon": "",
         "cost_per_unit": 120000,  # ₹ per 500m²
         "units_label": "pavement sections",
         "base_cooling": 0.12,
@@ -234,11 +234,11 @@ def simulate_intervention(req: SimulationRequest):
         "intervention": iv["name"],
         "units": units,
         "recommendation": (
-            "✅ Highly recommended — strong thermal return on investment"
+            "Highly recommended — strong thermal return on investment"
             if cooling_roi > 0.05
-            else "⚠️ Moderate impact — consider combining with other interventions"
+            else "Moderate impact — consider combining with other interventions"
             if cooling_roi > 0.02
-            else "ℹ️ Low immediate impact — better suited for green zones"
+            else "Low immediate impact — better suited for green zones"
         ),
     }
 

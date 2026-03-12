@@ -123,7 +123,7 @@ export default function HeatGrid({ cells, selectedCell, onCellSelect }) {
       rect.bindTooltip(
         `<div style="font-family:monospace;font-size:12px;background:#0f1218;color:#d4dce8;border:1px solid #2a3445;padding:6px 10px;border-radius:4px;">
           <strong style="color:#fff">${cell.zone}</strong><br/>
-          🌡️ ${cell.lst}°C &nbsp; <span style="color:${SEVERITY_COLORS[cell.severity]}">${cell.severity.toUpperCase()}</span><br/>
+          ${cell.lst}°C &nbsp; <span style="color:${SEVERITY_COLORS[cell.severity]}">${cell.severity.toUpperCase()}</span><br/>
           NDVI: ${cell.ndvi} &nbsp; NDBI: ${cell.ndbi}
         </div>`,
         { sticky: true, opacity: 1, className: "heat-tooltip" }
